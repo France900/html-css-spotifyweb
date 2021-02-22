@@ -45,6 +45,8 @@ aside {
   overflow-y: scroll;
   padding-top: 80px;
   background-color: #121212;
+  width: calc(100vw - 180px);
+
 }
 
 /* <!-- MENU --> */
@@ -70,8 +72,8 @@ ul a {
 /* <!-- SCROLL BOX --> */
 .scroll-box {
   /* overflow-y: scroll; PERCHE QUI NON FUNZIONA? */
-  /* width: calc(100vw - 180px); PERCHE PORCAUTTANA MANDA IN OVERFLOW ??? */
-  max-width: 7000px;
+  /* width: calc(100vw - 180px);  PERCHE PORCAUTTANA MANDA IN OVERFLOW ??? */
+  /* max-width: 7000px; */
 }
 .scroll-box img {
   width: 150px;
