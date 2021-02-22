@@ -10,15 +10,16 @@ h2,h3,h4,h5,h6 {
 }
 
 h2 {
-  line-height: 35px;
-  margin: 25px 0;
+  /* line-height: 35px; */
+  margin-top: 30px;
+  margin-bottom: 10px;
 }
 /* <!-- main --> */
 .to-flex {
   display: flex;
 }
 main {
-  height: calc(100vh - 100px);
+  height: calc(100vh - 60px);
 }
 
 /* <!-- ASIDE --> */
@@ -27,6 +28,20 @@ aside {
   height: 100%;
   background-color: black;
   flex-shrink: 0;
+}
+aside div {
+  color: grey;
+}
+aside img {
+  width: 80%;
+}
+aside a {
+  text-decoration: none;
+  color: gray;
+}
+
+.home {
+  vertical-align: middle;
 }
 
 /* <!-- NAVBAR --> */
@@ -38,15 +53,25 @@ aside {
   position: fixed;
   top: 0;
   right: 0;
+  text-align: right;
+  line-height: 80px;
+}
+.navbar a {
+  text-decoration: none;
+  color: lightgray;
+  border: 2px solid lightgray;
+  border-radius: 20px;
+  padding: 10px;
+  margin-right: 15px;
+  text-transform: uppercase;
 }
 
-/* <!-- impostazioni scroller --> */
+/* <!-- IMPOSTAZIONI SCROLLER --> */
 .scroller {
   overflow-y: scroll;
   padding-top: 80px;
   background-color: #121212;
   width: calc(100vw - 180px);
-
 }
 
 /* <!-- MENU --> */
@@ -55,38 +80,33 @@ aside {
   line-height: 50px;
   background-color: #121212;
 }
-ul {
+.menu ul {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
   list-style: none;
 }
-ul a {
+.menu ul a {
   text-transform: uppercase;
   text-decoration: none;
   color: lightgray;
-  margin-left: 15px;
-  margin-right: 15px;
+  margin: 0 15px;
 }
 
-/* <!-- SCROLL BOX --> */
-.scroll-box {
-  /* overflow-y: scroll; PERCHE QUI NON FUNZIONA? */
-  /* width: calc(100vw - 180px);  PERCHE PORCAUTTANA MANDA IN OVERFLOW ??? */
-  /* max-width: 7000px; */
-}
-.scroll-box img {
+/* <!-- CREATO PER JOHN DOE -->
+<!-- ARTISTI PIU POPOLARI -->
+<!-- RECENTLY PLAYED --> */
+.scroller img {
   width: 150px;
   margin: 25px;
 }
-.scroll-box p {
+.scroller p {
   color: lightgray;
 }
-.scroll-box a {
+.scroller a {
   text-decoration: none;
   text-align: center;
 }
-
 .box-flex {
   display: flex;
   flex-wrap: wrap;
@@ -94,9 +114,9 @@ ul a {
 
 /* <!-- FOOTER --> */
 footer {
-  height: 100px;
+  height: 60px; /* se modificato modifica altezza main */
   width: 100vw;
-  background-color: gray;
+  background-color: #282828;
 }
 
 /*
