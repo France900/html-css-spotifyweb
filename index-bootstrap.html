@@ -11,24 +11,34 @@
     <!-- <link rel="stylesheet" href="/framework.css">  il mio framework con boostrap non è piu utile-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"><!-- Latest compiled and minified CSS --> <!-- da boostrp 3.3.7 https://getbootstrap.com/docs/3.3/getting-started/ -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous"><!-- Optional theme --> <!-- da boostrp 3.3.7 https://getbootstrap.com/docs/3.3/getting-started/ -->
-    <link rel="stylesheet" href="./assets/master.css">
+    <link rel="stylesheet" href="./assets/master-bootstrap.css">
   </head>
 
   <body>
-    <div class="container-fluo">
+    <div class="container-fluid">
       <div class="row">
 
-        <aside class="col-lg-2">
-          <div class="box-aside"></div>
+<!-- ASIDE -->
+        <aside class="col-xs-1 col-sm-2 col-md-2 col-lg-2 box-aside">
+          <ul>
+            <li><a href="#">playlist di merda</a></li>
+          </ul>
         </aside>
 
-        <main class="col-lg-10">
+        <main class="col-xs-11 col-sm-10 col-md-10 col-lg-10">
 
-          <section class="row" role="Menu">
-            <div class="col">
+<!-- HEADER -->
+          <section class="row" role="hedaer">
+            <div class="col-xs-12 box-header">
+            </div>
+          </section>
+
+<!-- MENU -->
+          <section class="row" role="menu">
+            <div class="col-xs-12 box-menu">
               <ul>
-                <li><a href="#"></a></li>
-                <li><a href="#"></a></li>
+                <li><a href="#">in evidenza</a></li>
+                <li><a href="#">podcast</a></li>
                 <li><a href="#"></a></li>
                 <li><a href="#"></a></li>
                 <li><a href="#"></a></li>
@@ -37,83 +47,109 @@
             </div>
           </section>
 
-          <section class="col" role="recently played">
-            <div class="row">
-              <div class="col">
+<!-- SCROLL BOX -->
+          <section class="col-xs-12 box-scroll text-center">
+<!-- RECENTLY PLAYED -->
+            <div class="row box-flex">
+
+              <div class="">
                 <h2>Recently Played</h2>
               </div>
+
               <div class="col">
-                <img src="" alt="">
-                <h2></h2>
-                <p></p>
+                <a href="#">
+                  <img src="./assets/img/71IVeyIU1GL._AC_SX466_.jpg" alt="">
+                  <h4>Lorem Ipsum</h4>
+                  <p>Lorem Ipsum</p>
+                </a>
               </div>
               <div class="col">
-                <img src="" alt="">
-                <h2></h2>
-                <p></p>
+                <a href="#">
+                  <img src="./assets/img/71IVeyIU1GL._AC_SX466_.jpg" alt="">
+                  <h4>Lorem Ipsum</h4>
+                  <p>Lorem Ipsum</p>
+                </a>
               </div>
               <div class="col">
-                <img src="" alt="">
-                <h2></h2>
-                <p></p>
+                <a href="#">
+                  <img src="./assets/img/71IVeyIU1GL._AC_SX466_.jpg" alt="">
+                  <h4>Lorem Ipsum</h4>
+                  <p>Lorem Ipsum</p>
+                </a>
               </div>
               <div class="col">
-                <img src="" alt="">
-                <h2></h2>
-                <p></p>
+                <a href="#">
+                  <img src="./assets/img/71IVeyIU1GL._AC_SX466_.jpg" alt="">
+                  <h4>Lorem Ipsum</h4>
+                  <p>Lorem Ipsum</p>
+                </a>
               </div>
               <div class="col">
-                <img src="" alt="">
-                <h2></h2>
-                <p></p>
+                <a href="#">
+                  <img src="./assets/img/71IVeyIU1GL._AC_SX466_.jpg" alt="">
+                  <h4>Lorem Ipsum</h4>
+                  <p>Lorem Ipsum</p>
+                </a>
               </div>
               <div class="col">
-                <img src="" alt="">
-                <h2></h2>
-                <p></p>
+                <a href="#">
+                  <img src="./assets/img/71IVeyIU1GL._AC_SX466_.jpg" alt="">
+                  <h4>Lorem Ipsum</h4>
+                  <p>Lorem Ipsum</p>
+                </a>
               </div>
+
             </div>
 
-            <div class="col">
-              <div class="row">
+<!-- CREATO PER JOHN DOE -->
+              <div class="row box-flex">
                 <div class="col">
-                  <h2>Recently Played</h2>
+                  <h2>Creato per John Doe</h2>
                 </div>
                 <div class="col">
-                  <img src="" alt="">
-                  <h2></h2>
-                  <p></p>
+                  <a href="#">
+                    <img src="./assets/img/71IVeyIU1GL._AC_SX466_.jpg" alt="">
+                    <h4>Lorem Ipsum</h4>
+                    <p>Lorem Ipsum</p>
+                  </a>
                 </div>
                 <div class="col">
-                  <img src="" alt="">
-                  <h2></h2>
-                  <p></p>
+                  <a href="#">
+                    <img src="./assets/img/71IVeyIU1GL._AC_SX466_.jpg" alt="">
+                    <h4>Lorem Ipsum</h4>
+                    <p>Lorem Ipsum</p>
+                  </a>
                 </div>
               </div>
-            </div>
 
-            <div class="col">
-              <div class="row">
+<!-- ARTISTI PIU POPOLARI -->
+              <div class="row box-flex">
                 <div class="col">
-                  <h2>Recently Played</h2>
+                  <h2>Artisti piu popolari</h2>
                 </div>
                 <div class="col">
-                  <img src="" alt="">
-                  <h2></h2>
-                  <p></p>
+                  <a href="#">
+                    <img src="./assets/img/71IVeyIU1GL._AC_SX466_.jpg" alt="">
+                    <h4>Lorem Ipsum</h4>
+                    <p>Lorem Ipsum</p>
+                  </a>
                 </div>
                 <div class="col">
-                  <img src="" alt="">
-                  <h2></h2>
-                  <p></p>
+                  <a href="#">
+                    <img src="./assets/img/71IVeyIU1GL._AC_SX466_.jpg" alt="">
+                    <h4>Lorem Ipsum</h4>
+                    <p>Lorem Ipsum</p>
+                  </a>
                 </div>
               </div>
-            </div>
 
           </section>
         </main>
 
-        <footer></footer>
+<!-- FOOTER -->
+        <footer class="col-xs-12 col-sm-12 col-md-12 col-lg-12 box-footer">
+
+        </footer>
 
       </div>
     </div>

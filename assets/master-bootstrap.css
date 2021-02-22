@@ -1,0 +1,48 @@
+/* <!-- ASIDE --> */
+aside {
+  background-color: black;
+}
+.box-aside {
+  height: calc(100vh - 80px);
+}
+
+/* <!-- HEADER --> */
+.box-header {
+  height: 50px;
+  background-color: gray;
+}
+
+/* <!-- MENU --> */
+.box-menu {
+  background-color: lightgray;
+}
+ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  justify-content: space-between;
+  
+}
+
+/* <!-- SCROLL BOX --> */
+.box-scroll {
+  max-height: calc(100vh - 260px);
+  overflow-y: scroll;
+}
+.box-scroll img {
+  width: 150px;
+}
+.box-flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.box-flex h2 {
+  width: 100%;
+}
+
+/* <!-- FOOTER --> */
+.box-footer {
+  height: 80px;
+  background-color: gray;
+}
