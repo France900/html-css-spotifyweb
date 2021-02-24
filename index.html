@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>index-base</title>
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" /> --> <!-- link a font awesome, es per "carret down" (che trovi sul secondo sito ed è per i simboli)-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous"/><!-- link a font awesome, es per "carret down" (che trovi sul secondo sito ed è per i simboli) -->
     <link rel="stylesheet" href="./assets/master.css">
   </head>
 
@@ -21,26 +21,35 @@
         <img src="./assets/img/logo-esteso.png" alt="">
         <!-- <img src="./assets/img/logo.png" alt=""> -->
 
-        <div class="home"><!-- home -->
-          <svg viewBox="0 0 512 512" width="24" height="24" xmlns="http://www.w3.org/2000/svg"><path d="M448 463.746h-149.333v-149.333h-85.334v149.333h-149.333v-315.428l192-111.746 192 110.984v316.19z" fill="currentColor"></path></svg>
-          <p>Home</p>
-        </div>
+        <!-- aside ul -->
+        <ul>
+          <li role="home"><!-- home -->
+            <a href="#">
+              <svg viewBox="0 0 512 512" width="24" height="24" xmlns="http://www.w3.org/2000/svg"><path d="M448 463.746h-149.333v-149.333h-85.334v149.333h-149.333v-315.428l192-111.746 192 110.984v316.19z" fill="currentColor"></path></svg>
+              <p>Home</p>
+            </a>
+          </li>
 
-        <div class="cerca"><!-- cerca -->
-          <svg viewBox="0 0 512 512" width="24" height="24" xmlns="http://www.w3.org/2000/svg"><path d="M349.714 347.937l93.714 109.969-16.254 13.969-93.969-109.969q-48.508 36.825-109.207 36.825-36.826 0-70.476-14.349t-57.905-38.603-38.603-57.905-14.349-70.476 14.349-70.476 38.603-57.905 57.905-38.603 70.476-14.349 70.476 14.349 57.905 38.603 38.603 57.905 14.349 70.476q0 37.841-14.73 71.619t-40.889 58.921zM224 377.397q43.428 0 80.254-21.461t58.286-58.286 21.461-80.254-21.461-80.254-58.286-58.285-80.254-21.46-80.254 21.46-58.285 58.285-21.46 80.254 21.46 80.254 58.285 58.286 80.254 21.461z" fill="currentColor" fill-rule="evenodd"></path></svg>
-          <p>Cerca</p>
-        </div>
+          <li role="cerca"><!-- cerca -->
+            <a href="#">
+              <svg viewBox="0 0 512 512" width="24" height="24" xmlns="http://www.w3.org/2000/svg"><path d="M349.714 347.937l93.714 109.969-16.254 13.969-93.969-109.969q-48.508 36.825-109.207 36.825-36.826 0-70.476-14.349t-57.905-38.603-38.603-57.905-14.349-70.476 14.349-70.476 38.603-57.905 57.905-38.603 70.476-14.349 70.476 14.349 57.905 38.603 38.603 57.905 14.349 70.476q0 37.841-14.73 71.619t-40.889 58.921zM224 377.397q43.428 0 80.254-21.461t58.286-58.286 21.461-80.254-21.461-80.254-58.286-58.285-80.254-21.46-80.254 21.46-58.285 58.285-21.46 80.254 21.46 80.254 58.285 58.286 80.254 21.461z" fill="currentColor" fill-rule="evenodd"></path></svg>
+              <p>Cerca</p>
+            </a>
+          </li>
 
-        <div class="libreria"><!-- libreria -->
-          <svg viewBox="0 0 512 512" width="24" height="24" xmlns="http://www.w3.org/2000/svg"><path d="M291.301 81.778l166.349 373.587-19.301 8.635-166.349-373.587zM64 463.746v-384h21.334v384h-21.334zM192 463.746v-384h21.334v384h-21.334z" fill="currentColor"></path></svg>
-          <p>La tua libreria</p>
-        </div>
+          <li role="libreria"><!-- libreria -->
+            <a href="#">
+              <svg viewBox="0 0 512 512" width="24" height="24" xmlns="http://www.w3.org/2000/svg"><path d="M291.301 81.778l166.349 373.587-19.301 8.635-166.349-373.587zM64 463.746v-384h21.334v384h-21.334zM192 463.746v-384h21.334v384h-21.334z" fill="currentColor"></path></svg>
+              <p>La tua libreria</p>
+            </a>
+          </li>
+        </ul>
 
         <h4>Playlist</h4>
 
-        <a href="#"><!-- display block per il plus -->
+        <a class="add-playlist" href="#"><!-- display block per il plus -->
           <div class="plus">
-            <i></i>
+            <i class="fas fa-plus"></i>
           </div>
           <p>Crea Playlist</p>
         </a>
@@ -54,6 +63,12 @@
           <li><a href="#">Nuova Playlist</a></li>
           <li><a href="#">Nuova Playlist</a></li>
         </ul>
+
+        <div class="put-down">
+          <p><a href="#"><i class="far fa-arrow-alt-circle-down"></i>Installa app</a></p>
+          <hr>
+          <h3><a href="#"><i class="far fa-user"></i>John Doe</a></h3>
+        </div>
 
       </aside>
 
@@ -124,6 +139,7 @@
         </div>
 
 <!-- CREATO PER JOHN DOE -->
+<!-- mettere dentro div class wall (con dentro div clas post?) -->
         <h2>Creato per John Doe</h2>
         <p>Più ascolti, più saranno accurati i suggerimenti.</p>
         <div class="box-flex">
@@ -146,7 +162,7 @@
 <!-- ARTISTI PIU POPOLARI -->
         <h2>Artisti piu popolari</h2>
         <p>Più ascolti, più saranno accurati i suggerimenti.</p>
-        <div class="box-flex">
+        <div class="box-flex card">
           <div class="">
             <a href="#">
               <img src="./assets/img/MI0003419167.jpg" alt="">
@@ -176,6 +192,46 @@
 
 <!-- FOOTER -->
       <footer>
+
+        <div class="left-center">
+          <div class="to-flex cover-title">
+            <img src="./assets/img/4D07221800000578-5825901-Risque_rapper_Nicki_Minaj_shared_the_cover_art_for_her_new_album-m-25_1528599377723.jpg" alt="">
+            <div class="">
+              <h6>Lorem</h6>
+              <p>Lorem ipsum</p>
+            </div>
+          </div>
+          <div class="love-save">
+            <i class="far fa-heart"></i>
+            <i class="far fa-folder"></i>
+          </div>
+        </div>
+
+        <div class="center-top">
+          <div class="specefica">
+            <i class="fas fa-random"></i>
+            <i class="fas fa-step-backward"></i>
+            <i class="far fa-play-circle"></i>
+            <i class="fas fa-step-forward"></i>
+            <i class="fas fa-redo-alt"></i>
+          </div>
+          <div class="timeline">
+            <span>3:15</span>
+            <div class="progres-container">
+              <div class="progres-content"></div>
+            </div>
+            <span>3:40</span>
+          </div>
+        </div>
+
+        <div class="right-center">
+          <i class="fas fa-bars"></i>
+          <i class="fas fa-desktop"></i>
+          <i class="fas fa-volume-up"></i>
+          <div class="progres-container">
+            <div class="progres-content"></div>
+          </div>
+        </div>
       </footer>
 
   </body>
