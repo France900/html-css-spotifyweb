@@ -24,20 +24,29 @@ h2 {
 a:hover {
   color: white;
 }
+.menu ul a:hover {
+  color: white;
+}
 a img:hover {
   opacity: 0.5;
 }
-.to-hover {
-  position: relative;
+.to-hover i {
   display: none;
 }
-.fa-play {
+.to-hover:hover i {
+  display: block;
+}
+.to-hover {
+  position: relative;
+  /* display: none; */
+}
+.fa-play{
   position: absolute;
   color: gray;
   font-size: 20px;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%,);
+  transform: translate(-50%, -50%);
 }
 /* <!-- main --> */
 main {
