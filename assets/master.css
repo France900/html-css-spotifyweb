@@ -27,6 +27,18 @@ a:hover {
 a img:hover {
   opacity: 0.5;
 }
+.to-hover {
+  position: relative;
+  display: none;
+}
+.fa-play {
+  position: absolute;
+  color: gray;
+  font-size: 20px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%,);
+}
 /* <!-- main --> */
 main {
   height: calc(100vh - 70px);
